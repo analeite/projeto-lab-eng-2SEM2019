@@ -1,17 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-	<!DOCTYPE html>
-	<html>
+<!DOCTYPE html>
+<html>
 
-	<head>
-		<title>Produtos Disponíveis</title>
-		<meta charset="ISO-8859-1" />
-		<meta name="author" content="Ana Leite">
-		<meta name="keywords" content="entrega 01">
-	</head>
+<head>
+	<title>Produtos Disponíveis</title>
+	<meta charset="ISO-8859-1" />
+	<meta name="author" content="Ana Leite">
+	<meta name="keywords" content="entrega 01">
+</head>
 
-	<body>
-
+<body>
+	<form id="form-comprar" method="GET" action="../../java/exemplo/controller/Comprar.java">
 		<fieldset>
 			<legend>
 				<b>Produtos</b>
@@ -108,12 +108,13 @@
 			</table>
 			<br>
 		</fieldset>
-		<br>
-		<a href="carrinho.jsp"> Finalizar Compra </a>
-		<br/>
-		<br>
-		<a href="../index.jsp">Retornar a Página Inicial</a>
-		<br/>
-	</body>
+		<form>
+			<br>
+			<a href="carrinho.jsp"> Finalizar Compra </a>
+			<br />
+			<br>
+			<a href="../index.jsp">Retornar a Página Inicial</a>
+			<br />
+</body>
 
-	</html>
+</html>
