@@ -15,12 +15,12 @@
         <div class='coluna'>
             <fieldset>
                 <legend>
-                    <b>PÃ¡gina Principal</b>
+                    <b>Página Principal</b>
                 </legend>
-                <a href="estoque/estoque.jsp"> Controle de Estoque </a>
+                <a href="${pageContext.request.contextPath}/Estoque.action"> Controle de Estoque </a>
                 <br/>
                 <br>
-                <a href="comprar/comprar.jsp"> Comprar Produto </a>
+                <a href="${pageContext.request.contextPath}/Comprar.action"> Comprar Produto </a>
                 <br/>
             </fieldset>
         </div>

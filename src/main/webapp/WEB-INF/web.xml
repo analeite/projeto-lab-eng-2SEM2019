@@ -1,28 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+<!-- To change this license header, choose License Headers in Project Properties. 
+	To change this template file, choose Tools | Templates and open the template 
+	in the editor. -->
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-  version="3.1"
-  metadata-complete="true">
+	version="3.1" metadata-complete="true">
 
-    <description>
+	<description>
       Servlets Loja Shalom
     </description>
-    <display-name>Servlets Loja Shalom</display-name>
-    
-    <servlet>
-        <servlet-name>Adicionar</servlet-name>
-        <servlet-class>controller.Adicionar</servlet-class>
-    </servlet>
-    
-    <servlet-mapping>
-        <servlet-name>Adicionar</servlet-name>
-        <url-pattern>Adicionar.action</url-pattern>
-    </servlet-mapping>
+	<display-name>Servlets Loja Shalom</display-name>
+
+	<servlet>
+		<servlet-name>Adicionar</servlet-name>
+		<servlet-class>controller.Adicionar</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Adicionar</servlet-name>
+		<url-pattern>/Adicionar.action</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Comprar</servlet-name>
+		<servlet-class>controller.Comprar</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Comprar</servlet-name>
+		<url-pattern>/Comprar.action</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Estoque</servlet-name>
+		<servlet-class>controller.Estoque</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Estoque</servlet-name>
+		<url-pattern>/Estoque.action</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Index</servlet-name>
+		<servlet-class>controller.Index</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Index</servlet-name>
+		<url-pattern>/Index.action</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Remover</servlet-name>
+		<servlet-class>controller.Remover</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Remover</servlet-name>
+		<url-pattern>/Remover.action</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Carrinho</servlet-name>
+		<servlet-class>controller.Carrinho</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Carrinho</servlet-name>
+		<url-pattern>/Carrinho.action</url-pattern>
+	</servlet-mapping>
 </web-app>
