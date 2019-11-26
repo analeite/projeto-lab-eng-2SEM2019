@@ -11,8 +11,7 @@
 </head>
 
 <body>
-	<form id="form-comprar" method="GET"
-		action="${pageContext.request.contextPath}/Adicionar.action">
+	<form id="form-comprar" method="GET"<%-- action="${pageContext.request.contextPath}/Adicionar.action" --%>>
 		<fieldset>
 			<legend>
 				<b>Produtos</b>
@@ -36,12 +35,12 @@
 					<td>R$6,00</td>
 					<td><input type="number"></input></td>
 					<td>
-						<button method="GET"
-							action="${pageContext.request.contextPath}/Adicionar.action">Adicionar</button>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Adicionar.action">Adicionar</button>
 					</td>
 					<td>
-						<button method="GET"
-							action="${pageContext.request.contextPath}/Remover.action">
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Remover.action">
 							Remover</a>
 					</td>
 				</tr>
@@ -52,12 +51,12 @@
 					<td>R$15,00</td>
 					<td><input type="number"></input></td>
 					<td>
-						<button method="GET"
-							action="${pageContext.request.contextPath}/Adicionar.action">Adicionar</button>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Adicionar.action">Adicionar</button>
 					</td>
 					<td>
-						<button method="GET"
-							action="${pageContext.request.contextPath}/Remover.action">
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Remover.action">
 							Remover</a>
 					</td>
 				</tr>
@@ -68,12 +67,12 @@
 					<td>R$12,00</td>
 					<td><input type="number"></input></td>
 					<td>
-						<button method="GET"
-							action="${pageContext.request.contextPath}/Adicionar.action">Adicionar</button>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Adicionar.action">Adicionar</button>
 					</td>
 					<td>
-						<button method="GET"
-							action="${pageContext.request.contextPath}/Remover.action">
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Remover.action">
 							Remover</a>
 					</td>
 				</tr>
@@ -84,12 +83,12 @@
 					<td>R$35,00</td>
 					<td><input type="number"></input></td>
 					<td>
-						<button method="GET"
-							action="${pageContext.request.contextPath}/Adicionar.action">Adicionar</button>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Adicionar.action">Adicionar</button>
 					</td>
 					<td>
-						<button method="GET"
-							action="${pageContext.request.contextPath}/Remover.action">
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Remover.action">
 							Remover</a>
 					</td>
 				</tr>
@@ -100,12 +99,12 @@
 					<td>R$15,00</td>
 					<td><input type="number"></input></td>
 					<td>
-						<button method="GET"
-							action="${pageContext.request.contextPath}/Adicionar.action">Adicionar</button>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Adicionar.action">Adicionar</button>
 					</td>
 					<td>
-						<button method="GET"
-							action="${pageContext.request.contextPath}/Remover.action">
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Remover.action">
 							Remover</a>
 					</td>
 				</tr>
@@ -113,8 +112,11 @@
 			<br>
 		</fieldset>
 		<form>
-			<br> <a href="${pageContext.request.contextPath}/Carrinho.action"> Finalizar Compra </a> <br /> <br>
-			<a href="${pageContext.request.contextPath}/Index.action">Retornar a Página Inicial</a> <br />
+			<br> <a
+				href="${pageContext.request.contextPath}/Carrinho.action">
+				Finalizar Compra </a> <br /> <br> 
+				<a href="${pageContext.request.contextPath}/Index.action">Retornar
+				a Página Inicial</a> <br />
 </body>
 
 </html>

@@ -10,12 +10,12 @@
 	</head>
 
 	<body>
-		<form id="form02" method="post" action="acao/acao.jsp">
+		<form id="form02" method="post" <!-- action="acao/acao.jsp" -->
 			<fieldset>
 				<legend>Cadastro de Produtos</legend>
 				<input name=uid id=hidden01 type="hidden" value="xyz" />
 
-				<label for="ent_01">C√≥digo do Produto:</label>
+				<label for="ent_01">CÛdigo do Produto:</label>
 				<input name=nome id=ent_01 type="text" required/>
 				<br/>
 				<br>
@@ -25,7 +25,7 @@
 				<br/>
 				<br>
 
-				<label for="ent_01b">Pre√ßo:</label>
+				<label for="ent_01b">PreÁo:</label>
 				<input name=senha id=ent_01b type="text" required/>
 				<br/>
 				<br>
@@ -33,8 +33,8 @@
 				<label for="select01">Tipo de Produto:</label>
 				<br/>
 				<select id=select01 name="paisresidencia" size="3">
-					<option value="BR">Ter√ßo</option>
-					<option value="BR">√çcone de Santo</option>
+					<option value="BR">TerÁo</option>
+					<option value="BR">Õcone de Santo</option>
 					<option value="BR">Vela Artesanal</option>
 				</select>
 				<br/>
@@ -49,10 +49,10 @@
 			</fieldset>
 		</form>
 		<br>
-		<a href="estoque.jsp">Retornar ao Controle de Estoque</a>
+		<a href="${pageContext.request.contextPath}/Estoque.action">Retornar ao Controle de Estoque</a>
 		<br>
 		<br>
-		<a href="../index.jsp">Retornar a P√°gina Inicial</a>
+		<a href="${pageContext.request.contextPath}/Index.action">Retornar a P·gina Inicial</a>
 		<br/>
 	</body>
 

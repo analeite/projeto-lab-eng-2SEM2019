@@ -4,16 +4,16 @@
     <html>
 
     <head>
-        <title>ConfirmaÃ§Ã£o de ExclusÃ£o</title>
+        <title>Confirmação de Exclusão</title>
         <meta charset="ISO-8859-1">
     </head>
 
     <body>
-        <p>Produto ExcluÃ­do com Sucesso!</p>
-        <a href="../estoque.jsp">Retornar ao Controle de Estoque</a>
+        <p>Produto Excluído com Sucesso!</p>
+        <a href="${pageContext.request.contextPath}/Estoque.action">Retornar ao Controle de Estoque</a>
         <br>
         <br>
-        <a href="../../index.jsp">Retornar a PÃ¡gina Inicial</a>
+        <a href="${pageContext.request.contextPath}/Index.action">Retornar a Página Inicial</a>
         <br/>
     </body>
 

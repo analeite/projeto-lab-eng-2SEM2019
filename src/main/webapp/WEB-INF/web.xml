@@ -71,4 +71,45 @@
 		<servlet-name>Carrinho</servlet-name>
 		<url-pattern>/Carrinho.action</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Editar</servlet-name>
+		<servlet-class>controller.Editar</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Editar</servlet-name>
+		<url-pattern>/Editar.action</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Excluir</servlet-name>
+		<servlet-class>controller.Excluir</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Excluir</servlet-name>
+		<url-pattern>/Excluir.action</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Cadastro</servlet-name>
+		<servlet-class>controller.Cadastro</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Cadastro</servlet-name>
+		<url-pattern>/Cadastro.action</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Acao</servlet-name>
+		<servlet-class>controller.Acao</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Acao</servlet-name>
+		<url-pattern>/Acao.action</url-pattern>
+	</servlet-mapping>
+
 </web-app>

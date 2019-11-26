@@ -1,104 +1,119 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-	<!DOCTYPE html>
-	<html>
+<!DOCTYPE html>
+<html>
 
-	<head>
-		<title>Controle de Estoque</title>
-		<meta charset="ISO-8859-1" />
-		<meta name="author" content="Ana Leite">
-		<meta name="keywords" content="entrega 01">
-	</head>
+<head>
+<title>Controle de Estoque</title>
+<meta charset="ISO-8859-1" />
+<meta name="author" content="Ana Leite">
+<meta name="keywords" content="entrega 01">
+</head>
 
-	<body>
-
+<body>
+	<form id="form-estoque" method="GET">
 		<fieldset>
 			<legend>
 				<b>Produtos</b>
 			</legend>
-			<br>
-			<label for="ent_01">Buscar Produto:</label>
-			<input name=nome id=ent_01 type="text" />
+			<br> <label for="ent_01">Buscar Produto:</label> <input
+				name=nome id=ent_01 type="text" />
 			<button>Buscar</button>
-			<br>
-			<br>
+			<br> <br>
 			<table frame="hsides">
 				<tr>
-					<th> CÃ³digo do Produto </th>
-					<th> Nome do Produto </th>
-					<th> Tipo de Produto </th>
-					<th> PreÃ§o </th>
-					<th> AÃ§Ãµes </th>
+					<th>Código do Produto</th>
+					<th>Nome do Produto</th>
+					<th>Tipo de Produto</th>
+					<th>Preço</th>
+					<th>Ações</th>
 				</tr>
 				<tr>
 					<td>0001</td>
-					<td>Ãcone de SÃ£o JosÃ©</td>
-					<td>Ãcone de Santo</td>
+					<td>Ícone de São José</td>
+					<td>Ícone de Santo</td>
 					<td>R$6,00</td>
 					<td>
-						<a href="acao/editar.jsp">Editar </a>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Editar.action">Editar</button>
 					</td>
 					<td>
-						<a href="acao/excluir.jsp">Excluir </a>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Excluir.action">
+							Remover</a>
 					</td>
 				</tr>
 				<tr>
 					<td>0002</td>
-					<td>Vela de SÃ£o JosÃ©</td>
+					<td>Vela de São José</td>
 					<td>Vela Artesanal</td>
 					<td>R$15,00</td>
 					<td>
-						<a href="acao/editar.jsp">Editar </a>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Editar.action">Editar</button>
 					</td>
 					<td>
-						<a href="acao/excluir.jsp">Excluir </a>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Excluir.action">
+							Remover</a>
 					</td>
 				</tr>
 				<tr>
 					<td>0003</td>
-					<td>TerÃ§o de Santa Teresinha</td>
-					<td>TerÃ§o</td>
+					<td>Terço de Santa Teresinha</td>
+					<td>Terço</td>
 					<td>R$12,00</td>
 					<td>
-						<a href="acao/editar.jsp">Editar </a>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Editar.action">Editar</button>
 					</td>
 					<td>
-						<a href="acao/excluir.jsp">Excluir </a>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Excluir.action">
+							Remover</a>
 					</td>
 				</tr>
 				<tr>
 					<td>0004</td>
-					<td>Ãcone do Esposo EucarÃ­stico</td>
-					<td>Ãcone</td>
+					<td>Ícone do Esposo Eucarístico</td>
+					<td>Ícone</td>
 					<td>R$35,00</td>
 					<td>
-						<a href="acao/editar.jsp">Editar </a>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Editar.action">Editar</button>
 					</td>
 					<td>
-						<a href="acao/excluir.jsp">Excluir </a>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Excluir.action">
+							Remover</a>
 					</td>
 				</tr>
 				<tr>
 					<td>0005</td>
-					<td>TerÃ§o - Rainha da Paz</td>
-					<td>TerÃ§o</td>
+					<td>Terço - Rainha da Paz</td>
+					<td>Terço</td>
 					<td>R$15,00</td>
 					<td>
-						<a href="acao/editar.jsp">Editar </a>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Editar.action">Editar</button>
 					</td>
 					<td>
-						<a href="acao/excluir.jsp">Excluir </a>
+						<button type="submit"
+							formaction="${pageContext.request.contextPath}/Excluir.action">
+							Remover</a>
 					</td>
 				</tr>
 			</table>
 			<br>
 		</fieldset>
-		<br>
-		<a href="cadastro.jsp"> Cadastro de Produto </a>
-		<br/>
-		<br>
-		<a href="../index.jsp">Retornar a PÃ¡gina Inicial</a>
-		<br/>
-	</body>
+	</form>
+	<br>
+	<a href="${pageContext.request.contextPath}/Cadastro.action"> Cadastro de Produto </a>
+	<br />
+	<br>
+	<a href="${pageContext.request.contextPath}/Index.action">Retornar
+		a Página Inicial</a>
+	<br />
+</body>
 
-	</html>
+</html>
