@@ -8,10 +8,27 @@
 <meta charset="ISO-8859-1" />
 <meta name="author" content="Ana Leite">
 <meta name="keywords" content="entrega 01">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  		crossorigin="anonymous"></script>
+<script src="mainCrud.js"></script>
 </head>
 
 <body>
-	<form id="form-estoque" method="GET">
+
+	<form class=baseForm action="ConfirmarBusca.action" method="get">
+		<label class="formLabel"> ID do Produto: <input
+			name="idProduto" type="text" required class="formInput formTextInput">
+		</label> <input onclick="crudGet()" type="submit" value="Pesquisar" class="submitButton">
+		
+	</form>
+
+<%-- 	<button type="submit"
+		formaction="${pageContext.request.contextPath}/ConfirmarBusca.action">Confirmar
+		Busca</button> --%>
+
+
+	<!-- <form id="form-estoque" method="GET">
 		<fieldset>
 			<legend>
 				<b>Produtos</b>
@@ -113,7 +130,7 @@
 	<br>
 	<a href="${pageContext.request.contextPath}/Index.action">Retornar
 		a Página Inicial</a>
-	<br />
+	<br /> -->
 </body>
 
 </html>

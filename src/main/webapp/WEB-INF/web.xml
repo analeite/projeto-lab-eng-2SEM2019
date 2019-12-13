@@ -10,6 +10,7 @@
 	<description>
       Servlets Loja Shalom
     </description>
+    
 	<display-name>Servlets Loja Shalom</display-name>
 
 	<servlet>
@@ -111,5 +112,26 @@
 		<servlet-name>Acao</servlet-name>
 		<url-pattern>/Acao.action</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ConfirmarBusca</servlet-name>
+		<servlet-class>controller.ConfirmarBusca</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ConfirmarBusca</servlet-name>
+		<url-pattern>/ConfirmarBusca.action</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>ConsultaEstoque</servlet-name>
+		<servlet-class>controller.ConsultaEstoque</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ConsultaEstoque</servlet-name>
+		<url-pattern>/ConsultaEstoque.action</url-pattern>
+	</servlet-mapping>
+	
 
 </web-app>

@@ -10,7 +10,7 @@
 	</head>
 
 	<body>
-		<form id="form02" method="post" <!-- action="acao/acao.jsp" -->
+		<form id="form02" method="post"> <!-- action="acao/acao.jsp" -->
 			<fieldset>
 				<legend>Cadastro de Produtos</legend>
 				<input name=uid id=hidden01 type="hidden" value="xyz" />
